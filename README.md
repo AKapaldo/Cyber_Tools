@@ -180,7 +180,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the GNU License. See `LICENSE` for more information.
+Distributed under the GNU General Public License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -189,7 +189,7 @@ Distributed under the GNU License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Andrew Kapaldo - [@twitter_handle](https://twitter.com/kapaldoa)
 
 Project Link: [https://github.com/AKapaldo/Cyber_Tools](https://github.com/AKapaldo/Cyber_Tools)
 
