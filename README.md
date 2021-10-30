@@ -227,4 +227,4 @@ Project Link: [https://github.com/AKapaldo/Cyber_Tools](https://github.com/AKapa
 [license-url]: https://github.com/AKapaldo/Cyber_Tools/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/andrew-kapaldo
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/Decrypt.png
