@@ -3,7 +3,7 @@
 if [ "$1" == "" ]
 then
 echo "You forgot an IP address!"
-echo "Syntax: ./pingsweep.sh 192.168.0"
+echo "Syntax: ./pingsweep.sh <IP Address>"
 
 else
 for ip in `seq 1 254`; do
