@@ -43,27 +43,48 @@ elif len(sys.argv) == 3:
     print("Detected target of {} and starting at port {}".format(target, start_port))
     end_port = int(input("Stop at what port number?: ")) + 1
 elif len(sys.argv) == 2:
-    target = socket.gethostbyname(sys.argv[1])
-    print("Detected target of {}".format(target))
-    start_port = int(input("Start at what port number?: "))
-    end_port = int(input("Stop at what port number?: ")) + 1
+    if sys.argv[1] == "--help" or sys.argv[1] == "-h":
+        help = True
+    else:
+        target = socket.gethostbyname(sys.argv[1])
+        print("Detected target of {}".format(target))
+        start_port = int(input("Start at what port number?: "))
+        end_port = int(input("Stop at what port number?: ")) + 1
 
 else:
     print("Invalid number of arguments.")
     print("Syntax: PortScanner.py <IP> <Start Port> <End Port>")
 
 # Banner
-print(colors.HEADER + "#" * 50)
-print('''
+if help == True:
+    print(colors.HEADER + "#" * 50)
+    print('''
  ____   __  ____  ____    ____   ___   __   __ _ 
 (  _ \ /  \(  _ \(_  _)  / ___) / __) / _\ (  ( \\
  ) __/(  O ))   /  )(    \___ \( (__ /    \/    /
 (__)   \__/(__\_) (__)   (____/ \___)\_/\_/\_)__)
 
-''')
-print("Scanning target {}".format(target))
-print("Time started: {}".format(str(datetime.now())))
-print("#" * 50 + colors.ENDC)
+    ''')
+    print("#" * 50 + colors.ENDC)
+    print('''
+Port Scan is a simple Python3 port scanner.
+Port Scan syntax for a regular scan: ./portscan.py <IP Address> <Starting Port> <Ending Port>
+Port Scan syntax for a verbose scan: ./portscan.py <IP Address> <Starting Port> <Ending Port> -v
+NOTE: Verbose scanning is not reccomended on Windows machines as the built in colorizing doesn't work.
+    ''')
+    sys.exit()
+else:
+    print(colors.HEADER + "#" * 50)
+    print('''
+ ____   __  ____  ____    ____   ___   __   __ _ 
+(  _ \ /  \(  _ \(_  _)  / ___) / __) / _\ (  ( \\
+ ) __/(  O ))   /  )(    \___ \( (__ /    \/    /
+(__)   \__/(__\_) (__)   (____/ \___)\_/\_/\_)__)
+
+    ''')
+    print("Scanning target {}".format(target))
+    print("Time started: {}".format(str(datetime.now())))
+    print("#" * 50 + colors.ENDC)
 
 # Verbose Scanner
 if verbose == True:
