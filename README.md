@@ -69,7 +69,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#version">Version History</a></li>
+    <li><a href="#version-history">Version History</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -147,7 +147,6 @@ Python ROT3 and ROT13 Encrypt/Decrypt Tool
 python3 Cipher_Decrypt.py
 ```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -195,7 +194,7 @@ Distributed under the GNU General Public License. See `LICENSE` for more informa
 <!-- CONTACT -->
 ## Contact
 
-Andrew Kapaldo - [@twitter_handle](https://twitter.com/kapaldoa)
+Andrew Kapaldo - [@KapaldoA](https://twitter.com/kapaldoa)
 
 Project Link: [https://github.com/AKapaldo/Cyber_Tools](https://github.com/AKapaldo/Cyber_Tools)
 
