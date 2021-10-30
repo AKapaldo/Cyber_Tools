@@ -36,7 +36,7 @@
 <h3 align="center">Cyber Tools</h3>
 
   <p align="center">
-    project_description
+    Cyber Tools is a collection of basic cyber security tools wrote in various programing languages that can be used on both Linux and some modules on Windows machines.
     <br />
     <a href="https://github.com/AKapaldo/Cyber_Tools"><strong>Explore the docs »</strong></a>
     <br />
@@ -109,25 +109,19 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* On Linux
   ```sh
-  npm install npm@latest -g
+  sudo apt-get install python3.8
   ```
+* Or Download for Windows/Linux/MacOS
+  <a href ="https://www.python.org/downloads/">Download from Python.org</a>
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+   git clone https://github.com/AKapaldo/Cyber_Tools.git
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
