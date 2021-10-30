@@ -113,8 +113,8 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   sudo apt-get install python3.8
   ```
-* Or Download for Windows/Linux/MacOS
-  <a href ="https://www.python.org/downloads/">Download from Python.org</a>
+* Or <a href ="https://www.python.org/downloads/">Download</a> for Windows/Linux/MacOS
+  
 
 ### Installation
 
