@@ -180,7 +180,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the GNU License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -219,7 +219,7 @@ Project Link: [https://github.com/AKapaldo/Cyber_Tools](https://github.com/AKapa
 [issues-shield]: https://img.shields.io/github/issues/AKapaldo/Cyber_Tools.svg?style=for-the-badge
 [issues-url]: https://github.com/AKapaldo/Cyber_Tools/issues
 [license-shield]: https://img.shields.io/github/license/AKapaldo/Cyber_Tools.svg?style=for-the-badge
-[license-url]: https://github.com/AKapaldo/Cyber_Tools/blob/master/LICENSE.txt
+[license-url]: https://github.com/AKapaldo/Cyber_Tools/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/andrew-kapaldo
 [product-screenshot]: images/screenshot.png
