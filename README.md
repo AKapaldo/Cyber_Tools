@@ -69,11 +69,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#version">Version History</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -84,7 +82,10 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
+Cyber Tools contains:
+* Bash Shell IP Sweeper
+* Python Port Scanner
+* Python ROT3 and ROT13 Encrypt/Decrypt Tool
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -103,12 +104,11 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Tools can be copied using the "Raw" button to be placed in a local file or you can clone the full repo.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Some tools require Python. To install:
 * On Linux
   ```sh
   sudo apt-get install python3.8
@@ -131,7 +131,21 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Bash Shell IP Sweeper
+```sh
+chmod +x IPSweep.sh
+./IPSweep.sh
+```
+
+Python Port Scanner
+```sh
+python3 PortScanner.py
+```
+
+Python ROT3 and ROT13 Encrypt/Decrypt Tool
+```sh
+python3 Cipher_Decrypt.py
+```
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -139,13 +153,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
-<!-- ROADMAP -->
-## Roadmap
+<!-- VERSION -->
+## Version History
 
-- [] Feature 1
-- [] Feature 2
-- [] Feature 3
-    - [] Nested Feature
+- v1.0: Python Port Scanner and Bash IP Sweep
+    - v1.1: Added Python ROT3 and ROT13 Encrypt/Decrypt Tool
 
 See the [open issues](https://github.com/AKapaldo/Cyber_Tools/issues) for a full list of proposed features (and known issues).
 
@@ -153,7 +165,7 @@ See the [open issues](https://github.com/AKapaldo/Cyber_Tools/issues) for a full
 
 
 
-<!-- CONTRIBUTING -->
+<!-- CONTRIBUTING
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -168,7 +180,7 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
+---->
 
 
 <!-- LICENSE -->
@@ -191,7 +203,7 @@ Project Link: [https://github.com/AKapaldo/Cyber_Tools](https://github.com/AKapa
 
 
 
-<!-- ACKNOWLEDGMENTS -->
+<!-- ACKNOWLEDGMENTS
 ## Acknowledgments
 
 * []()
@@ -199,7 +211,7 @@ Project Link: [https://github.com/AKapaldo/Cyber_Tools](https://github.com/AKapa
 * []()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
+---->
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
