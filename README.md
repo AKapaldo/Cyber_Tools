@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/AKapaldo/Cyber_Tools">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/cybertools.png" alt="Logo">
   </a>
 
 <h3 align="center">Cyber Tools</h3>
