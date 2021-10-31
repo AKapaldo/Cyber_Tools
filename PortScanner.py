@@ -1,9 +1,7 @@
 #!/bin/python3
 
 # Import Modules
-import socket
-import sys
-import platform
+import socket, sys, platform, argparse
 from datetime import datetime
 
 # Set Variables
@@ -23,71 +21,49 @@ else:
         FAIL = '\033[91m'
         ENDC = '\033[0m'
 
-
-# Define Target
-if len(sys.argv) == 5:
-    if sys.argv[4] == "-v":
-        verbose = True
-        target = socket.gethostbyname(sys.argv[1])
-        start_port = int(sys.argv[2])
-        end_port = int(sys.argv[3]) + 1
-    else: 
-        print("Invaild argument. Use -v for verbose")
-elif len(sys.argv) == 4:
-    target = socket.gethostbyname(sys.argv[1])
-    start_port = int(sys.argv[2])
-    end_port = int(sys.argv[3]) + 1
-elif len(sys.argv) == 3:
-    target = socket.gethostbyname(sys.argv[1])
-    start_port = int(sys.argv[2])
-    print("Detected target of {} and starting at port {}".format(target, start_port))
-    end_port = int(input("Stop at what port number?: ")) + 1
-elif len(sys.argv) == 2:
-    if sys.argv[1] == "--help" or sys.argv[1] == "-h":
-        help = True
-    else:
-        target = socket.gethostbyname(sys.argv[1])
-        print("Detected target of {}".format(target))
-        start_port = int(input("Start at what port number?: "))
-        end_port = int(input("Stop at what port number?: ")) + 1
-
-else:
-    print("Invalid number of arguments.")
-    print("Syntax: PortScanner.py <IP> <Start Port> <End Port>")
-
-# Banner
-if help == True:
-    print(colors.HEADER + "#" * 50)
-    print('''
+# create parser
+parser = argparse.ArgumentParser(description=colors.HEADER + "#" * 50 + '''
  ____   __  ____  ____    ____   ___   __   __ _ 
 (  _ \ /  \(  _ \(_  _)  / ___) / __) / _\ (  ( \\
  ) __/(  O ))   /  )(    \___ \( (__ /    \/    /
 (__)   \__/(__\_) (__)   (____/ \___)\_/\_/\_)__)
-
-    ''')
-    print("#" * 50 + colors.ENDC)
-    print('''
+  
+''' + "#" * 50 + colors.ENDC +''' 
 Port Scan is a simple Python3 port scanner.
 Port Scan syntax for a regular scan: ./portscan.py <IP Address> <Starting Port> <Ending Port>
 Port Scan syntax for a verbose scan: ./portscan.py <IP Address> <Starting Port> <Ending Port> -v
 NOTE: Verbose scanning is not reccomended on Windows machines as the built in colorizing doesn't work.
-    ''')
-    sys.exit()
-else:
-    print(colors.HEADER + "#" * 50)
-    print('''
+''', formatter_class=argparse.RawDescriptionHelpFormatter)
+
+# add arguments to the parser
+parser.add_argument('target', action='store', type=str, help='IP address of the target machine')
+parser.add_argument('start_port', action='store', type=int, help='start of port range to scan')
+parser.add_argument('end_port', action='store', type=int, help='end of port range to scan')
+parser.add_argument('-v', action='store_true', required=False, help='show verbosity, colorized on Unix')
+
+# parse the arguments
+args = parser.parse_args()
+
+# Define Target
+target = socket.gethostbyname(args.target)
+start_port = args.start_port
+end_port = args.end_port + 1
+
+
+print(colors.HEADER + "#" * 50)
+print('''
  ____   __  ____  ____    ____   ___   __   __ _ 
 (  _ \ /  \(  _ \(_  _)  / ___) / __) / _\ (  ( \\
  ) __/(  O ))   /  )(    \___ \( (__ /    \/    /
 (__)   \__/(__\_) (__)   (____/ \___)\_/\_/\_)__)
 
-    ''')
-    print("Scanning target {}".format(target))
-    print("Time started: {}".format(str(datetime.now())))
-    print("#" * 50 + colors.ENDC)
+''')
+print("Scanning target {}".format(target))
+print("Time started: {}".format(str(datetime.now())))
+print("#" * 50 + colors.ENDC)
 
 # Verbose Scanner
-if verbose == True:
+if args.v == True:
     try:
         for port in range(start_port, end_port):
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
