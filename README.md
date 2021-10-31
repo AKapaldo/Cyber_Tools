@@ -157,7 +157,7 @@ python3 Cipher_Decrypt.py
 
 - v1.0: Python Port Scanner and Bash IP Sweep
     - v1.1: Added Python ROT3 and ROT13 Encrypt/Decrypt Tool
-
+    - v1.2: Updated the Encrypt/Decrypt tool to take text files using the -t argument or a typed or pasted string without -t. Added -v argument for verbosity to the Port Scanner, and added colorization for Unix.
 See the [open issues](https://github.com/AKapaldo/Cyber_Tools/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
