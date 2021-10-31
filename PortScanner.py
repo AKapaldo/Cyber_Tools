@@ -58,8 +58,8 @@ print('''
 (__)   \__/(__\_) (__)   (____/ \___)\_/\_/\_)__)
 
 ''')
-print("Scanning target {}".format(target))
-print("Time started: {}".format(str(datetime.now())))
+print(f"Scanning target {target}")
+print(f"Time started: {str(datetime.now())}")
 print("#" * 50 + colors.ENDC)
 
 # Verbose Scanner
@@ -70,9 +70,9 @@ if args.v == True:
             socket.setdefaulttimeout(1)
             result = s.connect_ex((target,port))
             if result == 0:
-                print(f"{colors.OKGREEN}Port {port} is open{colors.ENDC}")
+                print(f"{colors.OKGREEN}[+] - Port {port} is open{colors.ENDC}")
             else:
-                print("Port {} is closed".format(port))
+                print(f"{colors.FAIL}[-] - Port {port} is closed{colors.ENDC}")
             s.close()
 
     # Errors
@@ -97,7 +97,7 @@ else:
             socket.setdefaulttimeout(1)
             result = s.connect_ex((target,port))
             if result == 0:
-                print("Port {} is open.".format(port))
+                print(f"[+] - Port {port} is open")
             s.close()
 
     # Errors
