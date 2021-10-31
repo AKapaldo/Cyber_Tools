@@ -70,7 +70,7 @@ if args.v == True:
             socket.setdefaulttimeout(1)
             result = s.connect_ex((target,port))
             if result == 0:
-                print(f"{colors.OKGREEN}Port {port} is open.{colors.ENDC}")
+                print(f"{colors.OKGREEN}Port {port} is open{colors.ENDC}")
             else:
                 print("Port {} is closed".format(port))
             s.close()
